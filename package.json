@@ -6,6 +6,10 @@
   "directories": {
     "test": "test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gelatodigital/gelato-core-contracts.git"
+  },
   "devDependencies": {
     "@babel/core": "7.7.4",
     "@babel/preset-env": "7.7.4",
