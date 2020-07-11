@@ -7,7 +7,7 @@
 ### Installation
 
 ```console
-$ npm install @gelato/core
+$ npm install @gelatonetwork/core
 ```
 
 ### Dependencies
@@ -21,7 +21,7 @@ Once installed, you can use the contracts in the library by importing them:
 ```solidity
 pragma solidity ^0.6.10;
 
-import {Condition, Action, Task, Operation, DataFlow} from "@gelato/core/contracts/gelato_core/IGelatoCore.sol";
+import {Condition, Action, Task, Operation, DataFlow} from "@gelatonetwork/core/contracts/gelato_core/IGelatoCore.sol";
 
 contract AutomatedDapp {
 
