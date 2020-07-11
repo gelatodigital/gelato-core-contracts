@@ -1,6 +1,6 @@
 {
   "name": "@gelatonetwork/core",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Gelato Core Smart Contracts",
   "main": "buidler.config.js",
   "directories": {
