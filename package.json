@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gelatodigital/gelato-core-contracts.git"
+    "url": "https://github.com/gelatodigital/gelato-core-contracts.git"
   },
   "bugs": {
     "url": "https://github.com/gelatodigital/gelato-core-contracts/issues"
