@@ -13,7 +13,7 @@ import {ProviderModuleSet} from "../libraries/ProviderModuleSet.sol";
 import {
     Condition, Action, Operation, DataFlow, Provider, Task, TaskReceipt
 } from "./interfaces/IGelatoCore.sol";
-import {IGelatoCondition} from "./interfaces/IGelatoCondition.sol";
+import {IGelatoCondition} from "../conditions/IGelatoCondition.sol";
 
 /// @title GelatoProviders
 /// @notice Provider Management API - Whitelist TaskSpecs

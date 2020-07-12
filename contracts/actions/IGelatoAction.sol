@@ -1,7 +1,7 @@
 // "SPDX-License-Identifier: UNLICENSED"
 pragma solidity ^0.6.10;
 
-import {DataFlow} from "./IGelatoCore.sol";
+import {DataFlow} from "../gelato_core/interfaces/IGelatoCore.sol";
 
 /// @title IGelatoAction - solidity interface of GelatoActionsStandard
 /// @notice all the APIs and events of GelatoActionsStandard

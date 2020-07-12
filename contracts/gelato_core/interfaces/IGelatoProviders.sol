@@ -4,7 +4,7 @@ pragma experimental ABIEncoderV2;
 
 import {IGelatoProviderModule} from "./IGelatoProviderModule.sol";
 import {Action, Provider, Task, TaskReceipt} from "./IGelatoCore.sol";
-import {IGelatoCondition} from "./IGelatoCondition.sol";
+import {IGelatoCondition} from "../../conditions/IGelatoCondition.sol";
 
 // TaskSpec - Will be whitelised by providers and selected by users
 struct TaskSpec {

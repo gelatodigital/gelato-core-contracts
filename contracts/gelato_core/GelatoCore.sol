@@ -7,8 +7,8 @@ import {GelatoExecutors} from "./GelatoExecutors.sol";
 import {GelatoBytes} from "../libraries/GelatoBytes.sol";
 import {GelatoTaskReceipt} from "../libraries/GelatoTaskReceipt.sol";
 import {SafeMath} from "../external/SafeMath.sol";
-import {IGelatoCondition} from "./interfaces/IGelatoCondition.sol";
-import {IGelatoAction} from "./interfaces/IGelatoAction.sol";
+import {IGelatoCondition} from "../conditions/IGelatoCondition.sol";
+import {IGelatoAction} from "../actions/IGelatoAction.sol";
 import {IGelatoProviderModule} from "./interfaces/IGelatoProviderModule.sol";
 
 /// @title GelatoCore
