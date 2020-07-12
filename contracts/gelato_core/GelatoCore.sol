@@ -9,7 +9,7 @@ import {GelatoTaskReceipt} from "../libraries/GelatoTaskReceipt.sol";
 import {SafeMath} from "../external/SafeMath.sol";
 import {IGelatoCondition} from "../conditions/IGelatoCondition.sol";
 import {IGelatoAction} from "../actions/IGelatoAction.sol";
-import {IGelatoProviderModule} from "./interfaces/IGelatoProviderModule.sol";
+import {IGelatoProviderModule} from "../provider_modules/IGelatoProviderModule.sol";
 
 /// @title GelatoCore
 /// @author Luis Schliesske & Hilmar Orth

@@ -8,7 +8,7 @@ import {Address} from "../external/Address.sol";
 import {GelatoString} from "../libraries/GelatoString.sol";
 import {Math} from "../external/Math.sol";
 import {SafeMath} from "../external/SafeMath.sol";
-import {IGelatoProviderModule} from "./interfaces/IGelatoProviderModule.sol";
+import {IGelatoProviderModule} from "../provider_modules/IGelatoProviderModule.sol";
 import {ProviderModuleSet} from "../libraries/ProviderModuleSet.sol";
 import {
     Condition, Action, Operation, DataFlow, Provider, Task, TaskReceipt

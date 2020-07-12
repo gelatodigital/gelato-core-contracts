@@ -1,7 +1,7 @@
 // "SPDX-License-Identifier: UNLICENSED"
 pragma solidity ^0.6.10;
 
-import {IGelatoProviderModule} from "../gelato_core/interfaces/IGelatoProviderModule.sol";
+import {IGelatoProviderModule} from "../provider_modules/IGelatoProviderModule.sol";
 
 
 /**
