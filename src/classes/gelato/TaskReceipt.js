@@ -1,5 +1,6 @@
-import { constants, utils } from "ethers";
-import checkTaskMembers from "../../helpers/gelato/checkTaskMembers";
+const { constants, utils } = require("ethers");
+
+const checkTaskMembers = require("../../helpers/gelato/checkTaskMembers");
 
 class TaskReceipt {
   constructor({
@@ -31,4 +32,4 @@ class TaskReceipt {
   }
 }
 
-export default TaskReceipt;
+module.exports = TaskReceipt;

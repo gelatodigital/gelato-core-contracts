@@ -1,5 +1,4 @@
-import { constants } from "ethers";
-
+const { constants } = require("ethers");
 class Condition {
   constructor({ inst, data }) {
     this.inst = inst ? inst : constants.AddressZero;
@@ -7,4 +6,4 @@ class Condition {
   }
 }
 
-export default Condition;
+module.exports = Condition;

@@ -1,9 +1,3 @@
-// ES6 module imports via require
-require("@babel/register");
-
-// Libraries
-const { constants, utils } = require("ethers");
-
 // Classes
 const Action = require("./src/classes/gelato/Action").default;
 const Condition = require("./src/classes/gelato/Condition").default;
@@ -33,36 +27,33 @@ const checkNestedObj = require("./src/helpers/nestedObjects/checkNestedObj")
 const getNestedObj = require("./src/helpers/nestedObjects/getNestedObj")
   .default;
 
-// ================================= BRE extension ==================================
-extendEnvironment((bre) => {
-  // Classes
-  bre.Action = Action;
-  bre.Condition = Condition;
-  bre.GelatoProvider = GelatoProvider;
-  bre.Task = Task;
-  bre.TaskSpec = TaskSpec;
-  bre.TaskReceipt = TaskReceipt;
-  // Objects/Enums
-  bre.Operation = Operation;
-  bre.DataFlow = DataFlow;
-  // Functions
-  // Async
-  bre.sleep = sleep;
-  // Gelato
-  bre.convertTaskReceiptArrayToObj = convertTaskReceiptArrayToObj;
-  bre.convertTaskReceiptObjToArray = convertTaskReceiptObjToArray;
-  // Nested Arrays
-  bre.nestedArraysAreEqual = nestedArraysAreEqual;
-  // Nested Objects
-  bre.checkNestedObj = checkNestedObj;
-  bre.getNestedObj = getNestedObj;
-  // Libraries
-  bre.constants = constants;
-  bre.utils = utils;
-});
-
 // Go to https://buidler.dev/config/ to learn more
 module.exports = {
+  // Classes
+  Action: Action,
+  Condition: Condition,
+  GelatoProvider: GelatoProvider,
+  Task: Task,
+  TaskSpec: TaskSpec,
+  TaskReceipt: TaskReceipt,
+
+  // Objects/Enums
+  Operation: Operation,
+  DataFlow: DataFlow,
+
+  // Helpers
+  // Async
+  sleep: sleep,
+  // Gelato
+  convertTaskReceiptArrayToObj: convertTaskReceiptArrayToObj,
+  convertTaskReceiptObjToArray: convertTaskReceiptObjToArray,
+  // Nested Arrays
+  nestedArraysAreEqual: nestedArraysAreEqual,
+  // Nested Objects
+  checkNestedObj: checkNestedObj,
+  getNestedObj: getNestedObj,
+
+  // Buidler
   defaultNetwork: "buidlerevm",
   networks: {
     buidlerevm: {

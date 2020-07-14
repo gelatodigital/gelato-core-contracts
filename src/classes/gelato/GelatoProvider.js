@@ -9,4 +9,4 @@ class GelatoProvider {
   }
 }
 
-export default GelatoProvider;
+module.exports = GelatoProvider;

@@ -1,4 +1,4 @@
-import checkTaskMembers from "../../helpers/gelato/checkTaskMembers";
+const checkTaskMembers = require("../../helpers/gelato/checkTaskMembers");
 
 class Task {
   constructor({
@@ -17,4 +17,4 @@ class Task {
   }
 }
 
-export default Task;
+module.exports = Task;

@@ -1,6 +1,6 @@
-import { constants } from "ethers";
-import Operation from "../../enums/gelato/Operation";
-import DataFlow from "../../enums/gelato/DataFlow";
+const { constants } = require("ethers");
+const Operation = require("../../enums/gelato/Operation");
+const DataFlow = require("../../enums/gelato/DataFlow");
 
 class Action {
   constructor({ addr, data, operation, dataFlow, value, termsOkCheck }) {
@@ -45,4 +45,4 @@ class Action {
   }
 }
 
-export default Action;
+module.exports = Action;

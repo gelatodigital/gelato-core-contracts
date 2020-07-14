@@ -1,8 +1,8 @@
-import Action from "../../classes/gelato/Action";
-import Condition from "../../classes/gelato/Condition";
-import GelatoProvider from "../../classes/gelato/GelatoProvider";
-import Task from "../../classes/gelato/Task";
-import TaskReceipt from "../../classes/gelato/TaskReceipt";
+const Action = require("../../classes/gelato/Action");
+const Condition = require("../../classes/gelato/Condition");
+const GelatoProvider = require("../../classes/gelato/GelatoProvider");
+const Task = require("../../classes/gelato/Task");
+const TaskReceipt = require("../../classes/gelato/TaskReceipt");
 
 /*
 struct Provider {
@@ -133,4 +133,4 @@ function _convertToArrayOfActionObjs(actionsLog) {
   return actions;
 }
 
-export default convertTaskReceiptArrayToObj;
+module.exports = convertTaskReceiptArrayToObj;

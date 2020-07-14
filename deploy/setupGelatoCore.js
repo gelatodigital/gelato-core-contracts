@@ -1,4 +1,4 @@
-import { ethers } from "@nomiclabs/buidler";
+const { ethers } = require("@nomiclabs/buidler");
 
 // GelatoGasPriceOracle Setup Vars
 const STARTING_GAS_PRICE = ethers.utils.parseUnits("35", "gwei");

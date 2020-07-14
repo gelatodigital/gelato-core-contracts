@@ -16,4 +16,4 @@ class TaskSpec {
   }
 }
 
-export default TaskSpec;
+module.exports = TaskSpec;

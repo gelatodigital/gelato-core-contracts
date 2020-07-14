@@ -13,4 +13,4 @@ function nestedArraysAreEqual(a, b) {
   return true;
 }
 
-export default nestedArraysAreEqual;
+module.exports = nestedArraysAreEqual;

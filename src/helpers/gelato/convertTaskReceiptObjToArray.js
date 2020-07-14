@@ -88,4 +88,4 @@ function _convertToArrayOfActionArrays(arrayOfActionObjs) {
   return actions;
 }
 
-export default convertTaskReceiptObjToArray;
+module.exports = convertTaskReceiptObjToArray;
