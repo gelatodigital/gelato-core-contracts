@@ -1,3 +1,5 @@
+import { usePlugin } from "@nomiclabs/buidler/config";
+
 // Classes
 const Action = require("./src/classes/gelato/Action").default;
 const Condition = require("./src/classes/gelato/Condition").default;
