@@ -1,59 +1,54 @@
-import { usePlugin } from "@nomiclabs/buidler/config";
+const { usePlugin } = require("@nomiclabs/buidler/config");
 
 // Classes
-const Action = require("./src/classes/gelato/Action").default;
-const Condition = require("./src/classes/gelato/Condition").default;
-const GelatoProvider = require("./src/classes/gelato/GelatoProvider").default;
-const Task = require("./src/classes/gelato/Task").default;
-const TaskSpec = require("./src/classes/gelato/TaskSpec").default;
-const TaskReceipt = require("./src/classes/gelato/TaskReceipt").default;
+const Action = require("./src/classes/gelato/Action");
+const Condition = require("./src/classes/gelato/Condition");
+const GelatoProvider = require("./src/classes/gelato/GelatoProvider");
+const Task = require("./src/classes/gelato/Task");
+const TaskSpec = require("./src/classes/gelato/TaskSpec");
+const TaskReceipt = require("./src/classes/gelato/TaskReceipt");
 
 // Objects/Enums
-const Operation = require("./src/enums/gelato/Operation").default;
-const DataFlow = require("./src/enums/gelato/DataFlow").default;
+const Operation = require("./src/enums/gelato/Operation");
+const DataFlow = require("./src/enums/gelato/DataFlow");
 
 // Helpers
 // Async
-const sleep = require("./src/helpers/async/sleep").default;
+const sleep = require("./src/helpers/async/sleep");
 // Gelato
-const convertTaskReceiptArrayToObj = require("./src/helpers/gelato/convertTaskReceiptArrayToObj")
-  .default;
-const convertTaskReceiptObjToArray = require("./src/helpers/gelato/convertTaskReceiptObjToArray")
-  .default;
+const convertTaskReceiptArrayToObj = require("./src/helpers/gelato/convertTaskReceiptArrayToObj");
+const convertTaskReceiptObjToArray = require("./src/helpers/gelato/convertTaskReceiptObjToArray");
 // Nested Arrays
-const nestedArraysAreEqual = require("./src/helpers/nestedArrays/nestedArraysAreEqual")
-  .default;
+const nestedArraysAreEqual = require("./src/helpers/nestedArrays/nestedArraysAreEqual");
 // Nested Objects
-const checkNestedObj = require("./src/helpers/nestedObjects/checkNestedObj")
-  .default;
-const getNestedObj = require("./src/helpers/nestedObjects/getNestedObj")
-  .default;
+const checkNestedObj = require("./src/helpers/nestedObjects/checkNestedObj");
+const getNestedObj = require("./src/helpers/nestedObjects/getNestedObj");
 
 // Go to https://buidler.dev/config/ to learn more
 module.exports = {
   // Classes
-  Action: Action,
-  Condition: Condition,
-  GelatoProvider: GelatoProvider,
-  Task: Task,
-  TaskSpec: TaskSpec,
-  TaskReceipt: TaskReceipt,
+  Action,
+  Condition,
+  GelatoProvider,
+  Task,
+  TaskSpec,
+  TaskReceipt,
 
   // Objects/Enums
-  Operation: Operation,
-  DataFlow: DataFlow,
+  Operation,
+  DataFlow,
 
   // Helpers
   // Async
-  sleep: sleep,
+  sleep,
   // Gelato
-  convertTaskReceiptArrayToObj: convertTaskReceiptArrayToObj,
-  convertTaskReceiptObjToArray: convertTaskReceiptObjToArray,
+  convertTaskReceiptArrayToObj,
+  convertTaskReceiptObjToArray,
   // Nested Arrays
-  nestedArraysAreEqual: nestedArraysAreEqual,
+  nestedArraysAreEqual,
   // Nested Objects
-  checkNestedObj: checkNestedObj,
-  getNestedObj: getNestedObj,
+  checkNestedObj,
+  getNestedObj,
 
   // Buidler
   defaultNetwork: "buidlerevm",
