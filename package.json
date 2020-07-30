@@ -15,7 +15,9 @@
     "prettier": "2.0.3",
     "ethers": "5.0.7"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "node test/testExports.js"
+  },
   "keywords": [
     "solidity",
     "ethereum",

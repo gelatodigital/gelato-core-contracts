@@ -1,9 +1,7 @@
-// Contract ABIs
-const GelatoCoreABI = require("./artifacts/GelatoCore.json").abi;
-const GelatoGasPriceOracleABI = require("./artifacts/GelatoGasPriceOracle.json")
-  .abi;
-const GelatoActionPipelineABI = require("./artifacts/GelatoActionPipeline.json")
-  .abi;
+// Contract
+const GelatoCore = require("./artifacts/GelatoCore.json");
+const GelatoGasPriceOracle = require("./artifacts/GelatoGasPriceOracle.json");
+const GelatoActionPipeline = require("./artifacts/GelatoActionPipeline.json");
 
 // Classes
 const Action = require("./src/classes/gelato/Action");
@@ -31,9 +29,9 @@ const getNestedObj = require("./src/helpers/nestedObjects/getNestedObj");
 
 module.exports = {
   // Contract ABIs
-  GelatoCoreABI,
-  GelatoGasPriceOracleABI,
-  GelatoActionPipelineABI,
+  GelatoCore,
+  GelatoGasPriceOracle,
+  GelatoActionPipeline,
 
   // Classes
   Action,
