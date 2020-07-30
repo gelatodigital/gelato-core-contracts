@@ -2,10 +2,8 @@
   "name": "@gelatonetwork/core",
   "version": "0.3.0",
   "description": "Gelato Core Smart Contracts",
-  "main": "buidler.config.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "index.js",
+  "directories": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/gelatodigital/gelato-core-contracts.git"
@@ -14,27 +12,10 @@
     "url": "https://github.com/gelatodigital/gelato-core-contracts/issues"
   },
   "devDependencies": {
-    "@babel/core": "7.7.4",
-    "@babel/preset-env": "7.7.4",
-    "@babel/register": "7.7.4",
-    "@nomiclabs/buidler": "1.3.6",
-    "@nomiclabs/buidler-ethers": "1.3.4",
-    "@nomiclabs/buidler-waffle": "1.3.4",
-    "buidler-deploy": "^0.4.11",
-    "chai": "4.2.0",
-    "dotenv": "8.2.0",
-    "ethereum-waffle": "2.5.1",
-    "ethers": "4.0.47",
     "prettier": "2.0.3",
-    "solc": "0.6.10",
-    "solidity-coverage": "0.7.5",
-    "solidity-docgen": "0.4.1"
+    "ethers": "5.0.7"
   },
-  "scripts": {
-    "build": "npm run compile",
-    "compile": "npx buidler compile",
-    "test": "npx buidler test"
-  },
+  "scripts": {},
   "keywords": [
     "solidity",
     "ethereum",
@@ -43,6 +24,6 @@
     "gelato",
     "network"
   ],
-  "author": "hilmarx",
+  "author": "hilmarx & gitpusha",
   "license": "ISC"
 }
