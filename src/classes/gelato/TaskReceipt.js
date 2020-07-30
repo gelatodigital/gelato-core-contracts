@@ -1,4 +1,4 @@
-const { constants, utils } = require("ethers");
+const { constants, BigNumber } = require("ethers");
 
 const checkTaskMembers = require("../../helpers/gelato/checkTaskMembers");
 
@@ -20,11 +20,10 @@ class TaskReceipt {
     if (!tasks.length) throw new Error("\nTask: tasks be non-empty Array\n");
     for (const task of tasks) checkTaskMembers(task);
 
-    this.id = id !== undefined ? utils.bigNumberify(id) : constants.Zero;
+    this.id = id !== undefined ? BigNumber.from(id) : constants.Zero;
     this.userProxy = userProxy;
     this.provider = provider;
-    this.index =
-      index === undefined ? constants.Zero : utils.bigNumberify(index);
+    this.index = index === undefined ? constants.Zero : BigNumber.from(index);
     this.tasks = tasks ? tasks : [];
     this.expiryDate = expiryDate !== undefined ? expiryDate : constants.Zero;
     this.cycleId = cycleId !== undefined ? cycleId : constants.Zero;
