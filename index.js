@@ -1,4 +1,9 @@
-const { usePlugin } = require("@nomiclabs/buidler/config");
+// Contract ABIs
+const GelatoCoreABI = require("./artifacts/GelatoCore.json").abi;
+const GelatoGasPriceOracleABI = require("./artifacts/GelatoGasPriceOracle.json")
+  .abi;
+const GelatoActionPipelineABI = require("./artifacts/GelatoActionPipeline.json")
+  .abi;
 
 // Classes
 const Action = require("./src/classes/gelato/Action");
@@ -24,8 +29,12 @@ const nestedArraysAreEqual = require("./src/helpers/nestedArrays/nestedArraysAre
 const checkNestedObj = require("./src/helpers/nestedObjects/checkNestedObj");
 const getNestedObj = require("./src/helpers/nestedObjects/getNestedObj");
 
-// Go to https://buidler.dev/config/ to learn more
 module.exports = {
+  // Contract ABIs
+  GelatoCoreABI,
+  GelatoGasPriceOracleABI,
+  GelatoActionPipelineABI,
+
   // Classes
   Action,
   Condition,
@@ -49,53 +58,4 @@ module.exports = {
   // Nested Objects
   checkNestedObj,
   getNestedObj,
-
-  // Buidler
-  defaultNetwork: "buidlerevm",
-  networks: {
-    buidlerevm: {
-      hardfork: "istanbul",
-      allowUnlimitedContractSize: process.env.BUIDLER_DEBUG ? true : false,
-      // Custom
-      filters: { defaultFromBlock: 1, defaultToBlock: "latest" },
-    },
-    coverage: {
-      url: "http://127.0.0.1:8555",
-      // Custom
-      filters: { defaultFromBlock: 1, defaultToBlock: "latest" },
-    },
-    localhost: {
-      allowUnlimitedContractSize: process.env.BUIDLER_DEBUG ? true : false,
-      filters: { defaultFromBlock: 1, defaultToBlock: "latest" },
-    },
-  },
-
-  // This is a sample solc configuration that specifies which version of solc to use
-  solc: {
-    version: "0.6.10",
-    optimizer: { enabled: true },
-  },
-  namedAccounts: {
-    user: {
-      default: 0,
-    },
-    provider: {
-      default: 1,
-    },
-    executor: {
-      default: 2,
-    },
-    sysAdmin: {
-      default: 3,
-    },
-    gasPriceOracle: {
-      default: 4,
-    },
-  },
 };
-
-// ================================= PLUGINS =========================================
-usePlugin("@nomiclabs/buidler-ethers");
-usePlugin("@nomiclabs/buidler-waffle");
-usePlugin("solidity-coverage");
-usePlugin("buidler-deploy");
