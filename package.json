@@ -1,6 +1,6 @@
 {
   "name": "@gelatonetwork/core",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Gelato Core Smart Contracts",
   "main": "index.js",
   "directories": {},
@@ -12,8 +12,8 @@
     "url": "https://github.com/gelatodigital/gelato-core-contracts/issues"
   },
   "devDependencies": {
-    "prettier": "2.0.3",
-    "ethers": "5.0.7"
+    "ethers": "^5.0.7",
+    "prettier": "2.0.3"
   },
   "scripts": {
     "test": "node test/testExports.js"
@@ -27,5 +27,8 @@
     "network"
   ],
   "author": "hilmarx & gitpusha",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "ethers": "^5.0.7"
+  }
 }
