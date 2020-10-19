@@ -2,8 +2,6 @@
 const GelatoCore = require("./artifacts/GelatoCore.json");
 const GelatoGasPriceOracle = require("./artifacts/GelatoGasPriceOracle.json");
 const GelatoActionPipeline = require("./artifacts/GelatoActionPipeline.json");
-const GelatoUserProxy = require("./artifacts/GelatoUserProxy.json");
-const GelatoUserProxyFactory = require("./artifacts/GelatoUserProxyFactory.json");
 
 // Classes
 const Action = require("./src/classes/gelato/Action");
@@ -34,8 +32,6 @@ module.exports = {
   GelatoCore,
   GelatoGasPriceOracle,
   GelatoActionPipeline,
-  GelatoUserProxy,
-  GelatoUserProxyFactory,
 
   // Classes
   Action,
