@@ -4,6 +4,10 @@ const DataFlow = require("../../enums/gelato/DataFlow");
 
 class Action {
   constructor({ addr, data, operation, dataFlow, value, termsOkCheck }) {
+    if (typeof operation === "string") operation = parseInt(operation);
+    if (typeof dataFlow === "string") dataFlow = parseInt(dataFlow);
+    if (typeof value === "string") value = parseInt(value);
+
     if (!addr) throw new Error("\nAction: no addr passed to constructor\n");
     if (operation === undefined)
       throw new Error("\nAction: no operation passed to constructor\n");
