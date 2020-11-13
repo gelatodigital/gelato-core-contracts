@@ -1,5 +1,5 @@
 // "SPDX-License-Identifier: UNLICENSED"
-pragma solidity >=0.6.10;
+pragma solidity ^0.6.10;
 
 /**
  * @dev Contract module which provides a basic access control mechanism, where
@@ -10,7 +10,7 @@ pragma solidity >=0.6.10;
  * `onlyOwner`, which can be applied to your functions to restrict their use to
  * the owner.
  */
-abstract contract Ownable {
+contract Ownable {
     address private _owner;
 
     event OwnershipTransferred(
@@ -21,7 +21,7 @@ abstract contract Ownable {
     /**
      * @dev Initializes the contract setting the deployer as the initial owner.
      */
-    constructor() public {
+    constructor() internal {
         _owner = msg.sender;
         emit OwnershipTransferred(address(0), _owner);
     }
