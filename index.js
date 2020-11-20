@@ -1,7 +1,7 @@
 // Contract
-const GelatoCore = require("./artifacts/GelatoCore.json");
-const GelatoGasPriceOracle = require("./artifacts/GelatoGasPriceOracle.json");
-const GelatoActionPipeline = require("./artifacts/GelatoActionPipeline.json");
+const GelatoCore = require("./artifacts/contracts/gelato_core/GelatoCore.sol/GelatoCore.json");
+const GelatoGasPriceOracle = require("./artifacts/contracts/gelato_core/GelatoGasPriceOracle.sol/GelatoGasPriceOracle.json");
+const GelatoActionPipeline = require("./artifacts/contracts/actions/GelatoActionPipeline.sol/GelatoActionPipeline.json");
 
 // Classes
 const Action = require("./src/classes/gelato/Action");

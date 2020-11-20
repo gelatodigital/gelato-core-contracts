@@ -26,7 +26,7 @@ library GelatoBytes {
             (bytes4(_bytes[3]) >> 24);
     }
 
-    function revertWithError(bytes memory _bytes, string memory _tracingInfo)
+    function revertWithErrorString(bytes memory _bytes, string memory _tracingInfo)
         internal
         pure
     {

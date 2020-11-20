@@ -1,6 +1,6 @@
 {
   "name": "@gelatonetwork/core",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Gelato Core Smart Contracts",
   "main": "index.js",
   "directories": {},
@@ -13,10 +13,17 @@
   },
   "devDependencies": {
     "ethers": "^5.0.7",
+    "hardhat": "^2.0.3",
+    "husky": "^4.3.0",
     "prettier": "2.0.3"
   },
   "scripts": {
     "test": "node test/testExports.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx hardhat compile && yarn test"
+    }
   },
   "keywords": [
     "solidity",
