@@ -7,9 +7,9 @@ import {GelatoExecutors} from "./GelatoExecutors.sol";
 import {GelatoBytes} from "../libraries/GelatoBytes.sol";
 import {GelatoTaskReceipt} from "../libraries/GelatoTaskReceipt.sol";
 import {SafeMath} from "../external/SafeMath.sol";
-import {IGelatoCondition} from "../conditions/IGelatoCondition.sol";
-import {IGelatoAction} from "../actions/IGelatoAction.sol";
-import {IGelatoProviderModule} from "../provider_modules/IGelatoProviderModule.sol";
+import {IGelatoCondition} from "../gelato_conditions/IGelatoCondition.sol";
+import {IGelatoAction} from "../gelato_actions/IGelatoAction.sol";
+import {IGelatoProviderModule} from "../gelato_provider_modules/IGelatoProviderModule.sol";
 
 /// @title GelatoCore
 /// @author Luis Schliesske & Hilmar Orth
@@ -252,12 +252,6 @@ contract GelatoCore is IGelatoCore, GelatoExecutors {
 
         // memcopy of gelatoGasPrice, to avoid multiple storage reads
         uint256 gelatoGasPrice = _getGelatoGasPrice();
-
-        // Executors must use the gelatoGasPrice or higher
-        require(
-            tx.gasprice >= gelatoGasPrice,
-            "GelatoCore.exec: tx.gasprice below gelatoGasPrice"
-        );
 
         // Only assigned executor can execute this function
         require(

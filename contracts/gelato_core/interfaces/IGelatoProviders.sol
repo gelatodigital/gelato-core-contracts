@@ -2,9 +2,9 @@
 pragma solidity >=0.6.10;
 pragma experimental ABIEncoderV2;
 
-import {IGelatoProviderModule} from "../../provider_modules/IGelatoProviderModule.sol";
+import {IGelatoProviderModule} from "../../gelato_provider_modules/IGelatoProviderModule.sol";
 import {Action, Provider, Task, TaskReceipt} from "./IGelatoCore.sol";
-import {IGelatoCondition} from "../../conditions/IGelatoCondition.sol";
+import {IGelatoCondition} from "../../gelato_conditions/IGelatoCondition.sol";
 
 // TaskSpec - Will be whitelised by providers and selected by users
 struct TaskSpec {

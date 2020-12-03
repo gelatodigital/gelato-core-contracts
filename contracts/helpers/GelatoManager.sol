@@ -5,7 +5,7 @@ pragma experimental ABIEncoderV2;
 // Gelato Dependencies
 import { IGelatoCore, Provider, Task } from "../gelato_core/interfaces/IGelatoCore.sol";
 import { IGelatoProviders, TaskSpec } from "../gelato_core/interfaces/IGelatoProviders.sol";
-import { IGelatoProviderModule } from "../provider_modules/IGelatoProviderModule.sol";
+import { IGelatoProviderModule } from "../gelato_provider_modules/IGelatoProviderModule.sol";
 
 // OZ dependencies
 import { Ownable } from "../external/Ownable.sol";

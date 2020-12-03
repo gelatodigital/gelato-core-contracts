@@ -8,12 +8,12 @@ import {Address} from "../external/Address.sol";
 import {GelatoString} from "../libraries/GelatoString.sol";
 import {Math} from "../external/Math.sol";
 import {SafeMath} from "../external/SafeMath.sol";
-import {IGelatoProviderModule} from "../provider_modules/IGelatoProviderModule.sol";
+import {IGelatoProviderModule} from "../gelato_provider_modules/IGelatoProviderModule.sol";
 import {ProviderModuleSet} from "../libraries/ProviderModuleSet.sol";
 import {
     Condition, Action, Operation, DataFlow, Provider, Task, TaskReceipt
 } from "./interfaces/IGelatoCore.sol";
-import {IGelatoCondition} from "../conditions/IGelatoCondition.sol";
+import {IGelatoCondition} from "../gelato_conditions/IGelatoCondition.sol";
 
 /// @title GelatoProviders
 /// @notice Provider Management API - Whitelist TaskSpecs
