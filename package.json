@@ -1,6 +1,6 @@
 {
   "name": "@gelatonetwork/core",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "Gelato Core Smart Contracts",
   "main": "index.js",
   "directories": {},
@@ -37,5 +37,6 @@
   "license": "ISC",
   "peerDependencies": {
     "ethers": "^5.0.7"
-  }
+  },
+  "types": "types/index.d.ts"
 }
